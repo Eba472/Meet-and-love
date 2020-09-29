@@ -1,6 +1,7 @@
 *{
     padding: 0;
-    margin: 0;
+    margin-top: ;
+    margin: 200 auto;
     overflow-x: hidden;
 }
 .game{
@@ -8,11 +9,12 @@
     height: 200px;
     border: 1px solid black;
     margin: auto;
+    float: left;
 }
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-color: green;
     position:relative;
     top: 150px;
 }
@@ -35,9 +37,54 @@
     left: 500px;
     animation: block 1s infinite linear;
 }
+
 @keyframes block{
     0%{left: 500px}
     100%{left: -20px}
+}
+p{
+    text-align: center;
+}
+
+
+.game1{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    float: left;
+}
+#character1{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position:relative;
+    top: 150px;
+    left: 480px;
+}
+.animate1{
+    animation: jump1 0.3s linear;
+}
+@keyframes jump1{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block1{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 100px;
+    animation: block1 1s infinite linear;
+}
+
+@keyframes block1{
+    0%{left: 0px}
+    100%{left: 520px}
 }
 p{
     text-align: center;
